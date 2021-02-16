@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Final</title>
+</head>
+<link rel="stylesheet" href="style/style.css" type="text/css" />
+
+<body>
+   <div class="wrapper">
+      <div class="header">
+         <h1 class="header__title">Task Manager</h1>
+         <div class="header__toolbar">
+            <div class="header__task">
+               <div class="header__task__action">
+                  <input id="newTack" class="header__task__text taskText" type="text" placeholder="New task..." />
+                  <input disabled="true" id="addBtn" type="button" class="header__task__button add" value="Add" />
+                  <input id="RandomBtn" type="button" class="header__task__button add" value="Add Random" />
+               </div>
+               <div>
+                  <p id="error"></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content-wrapper">
+         <ul id="myList" class="todo-list">
+            <!-- <li class="todo-list__item">
+               <span>Cook the dinner</span>
+               <button class="todo-list__delete-btn">X</button>
+            </li>
+            <li class="todo-list__item">
+               <span>Go to the gym</span>
+               <button class="todo-list__delete-btn">X</button>
+            </li>
+            <li class="todo-list__item">
+               <span>Meet Kevin</span>
+               <button class="todo-list__delete-btn">X</button>
+            </li>
+            <li class="todo-list__item todo-list__item--done">
+               <span>Pay bills</span>
+               <button class="todo-list__delete-btn">X</button>
+            </li> -->
+         </ul>
+      </div>
+   </div>
+   <p class="ctnTasks"><span id="ctnOfTasks"></span></p>
+   <script src="js/index.js"></script>
+</body>
+
+</html>
